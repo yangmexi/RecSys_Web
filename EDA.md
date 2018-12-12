@@ -146,7 +146,7 @@ The median of total durations for each playlist is 190.37 minutes. The distribut
 
 The popularity of tracks, artists and albums might be useful for recommendation - the most simple and intuitive method of recommendation is to recommend the most popular tracks to users. Thus, we listed top 50 tracks, artists and albums in the whole MPD, which is useful for future references. 
 
-<center>**Figure 3. The most popular tracks, artists and albums**</center>
+<center>Figure 3. The most popular tracks, artists and albums</center>
 
 ![Top hits](notebooks/fig/tophits_full.png)
 
@@ -161,10 +161,10 @@ Number of unique artists: 9858
 Number of unique albums: 17345   
 Number of unique titles: 869    
 
-<center>**Figure 4. Distribution of Summary Stats for 1000 playlists**</center>
+<center>Figure 4. Distribution of Summary Stats for 1000 playlists</center>
 
 ![Distribution fo Summary Stats](notebooks/fig/Distribution_1K.png)
 
-<center>**Figure 5. The most popular tracks, artists and albums**</center>
+<center>Figure 5. The most popular tracks, artists and albums</center>
 
 ![Top hits](notebooks/fig/Tophits_1K.png)
