@@ -167,4 +167,4 @@ Number of unique titles: 869
 
 <center>**Figure 5. The most popular tracks, artists and albums**</center>
 
-![Top hits](fig/Tophits_1K.png)
+![Top hits](notebooks/fig/Tophits_1K.png)
