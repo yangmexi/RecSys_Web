@@ -1,15 +1,14 @@
 ---
-title: The Case of the Italian Olives
+title: Milestone #4 Final Report: Automatic Playlist Recommender
 ---
 
-This is the home page
+As of date, according to data released by Apple’s app store and Google Play, Spotify is the most popular music application in the United States. Spotify’s success consists of many facets, and its well-performing music recommender system undoubtedly plays an integral part.  In all, Music recommender systems (MRS) have recently exploded in popularity thanks to popular music streaming services like Spotify, Apple music, etc. By some accounts, almost half of all current music consumption is by the way of these services.	The popularity of music recommender systems is intelligible. Through technological advances, the mainstream way of music consumption evolved from using individual devices CD players, walkmans, iPods as ‘music players’ to using apps on laptops and mobile phones. A main change associated with the change of mainstream devices is that, a user’s ‘playlist’ is no longer ‘locally stored’, but rather stored online and can be shared with other users online. Public playlists on Spotify can be ‘followed’ by other users, and updates on the playlist are immediately available to followers.  As a result, online playlists possess properties that allow them to be dynamic and timely, and would therefore attract more user usage and interactions.
 
-## Lets have fun
+## Motivation
 
->here is a quote
+Our goal is to build a well-performing Music Recommender System that recommends songs to add into existing playlists. At its heart, the playlist generation is about finding the set of songs to recommend to best extend the experience of a listener in the midst of a playlist. By suggesting appropriate songs to add to a playlist, a Recommender System can increase user engagement by making playlist creation easier, as well as extending listening beyond the end of existing playlists. Based on the Million Playlist Dataset (MPD), which will be described below, our MRS will recommend new songs for existing playlists that the MRS predict users of the playlist would also like.
 
-Here is *emph* and **bold**.
+## Challenge
 
-Here is some inline math $\alpha = \frac{\beta}{\gamma}$ and, of-course, E rules:
+During the execution of the project, a major challenge was the size of the MPD. It is beyond our computers’ capacity to work with such a huge dataset. We therefore decided to use only a subsample of the data, working with 1000 playlists randomly selected from the MPD. More on this is described below. 
 
-$$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$
