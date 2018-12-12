@@ -1,5 +1,14 @@
+---
+title: EDA
+notebook: EDA.ipynb
+nav_include: 1
+---
 
-# EDA
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
 
 ## Data Preprocessing
 
@@ -7,9 +16,9 @@ We worked with the Million Playlist Dataset (MPD). The decompressed MPD’s size
 
 To parse the dataset into a more structured format and to query more efficiently, we built a relational database by SQLite3 in Python. The schema of the database is shown in the figure below. The database was organized to three relational tables, storing information of playlists’ properties (`playlist_info`), tracks’ properties (`track_info`) and playlist-track information (`playlist`), respectively. Since we focused on the playlists here, the playlist’s ID (pid) is used as primary key in our the database (Fig. 1). To retrieve and query data from the database, SQL commands were used.
 
-<center>Figure 1. Database Schema</center>
+<center>**Figure 1. Database Schema**</center>
 
-![db_schema](notebooks/fig/db_schema.png)
+![Database Schema](notebooks/fig/db_schema.png)
 
 ## The Million Playlist Dataset
 ### Part 1: Summary Statistics
@@ -35,7 +44,7 @@ des
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -127,9 +136,9 @@ des
 
 
 
-<center>**Figure 2. Distribution of Summary Statistics**</center>
+<center>Figure 2. Distribution of Summary Statistics</center>
 
-![Distribution of features](fig/distri_full.png)
+![Distribution of features](notebooks/fig/distri_full.png)
 
 The median of total durations for each playlist is 190.37 minutes. The distributions of number of tracks, number of artists, and number of albums for each playlist are right skewed. Thus, median values provide better descriptions than mean values for these features. The median of number of tracks in each playlist is 49, whereas the longest playlist contains 376 songs, and the shortest playlist has only 5 songs. In addition, about 50% of the playlists contain songs from over 29 artists or songs from over 37 albums. The majority of the playlists were built non-collaboratively. Furthermore, most of the changes in those playlists were made recently with the latest modification made on November 1 in 2017. 
 
@@ -137,7 +146,7 @@ The median of total durations for each playlist is 190.37 minutes. The distribut
 
 The popularity of tracks, artists and albums might be useful for recommendation - the most simple and intuitive method of recommendation is to recommend the most popular tracks to users. Thus, we listed top 50 tracks, artists and albums in the whole MPD, which is useful for future references. 
 
-<center>Figure 3. The most popular tracks, artists and albums</center>
+<center>**Figure 3. The most popular tracks, artists and albums**</center>
 
 ![Top hits](notebooks/fig/tophits_full.png)
 
@@ -152,10 +161,10 @@ Number of unique artists: 9858
 Number of unique albums: 17345   
 Number of unique titles: 869    
 
-<center>Figure 4. Distribution of Summary Stats for 1000 playlists</center>
+<center>**Figure 4. Distribution of Summary Stats for 1000 playlists**</center>
 
 ![Distribution fo Summary Stats](notebooks/fig/Distribution_1K.png)
 
-<center>Figure 5. The most popular tracks, artists and albums</center>
+<center>**Figure 5. The most popular tracks, artists and albums**</center>
 
-![Top hits](notebooks/fig/Tophits_1K.png)
+![Top hits](fig/Tophits_1K.png)

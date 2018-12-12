@@ -1,9 +1,9 @@
 theme: jekyll-theme-primer
-title: Support Vector Olives
-description: Keeping Italian Olives Pure!
+title: Automatic Playlist Recommender
+description: Build a music recommender system for song discovery
 baseurl:
 markdown: kramdown
 kramdown:
-    math_engine: mathjax
-    input: GFM
-    syntax_highlighter: rouge
+		math_engine: mathjax
+		input: GFM
+		syntax_highlighter: rouge
