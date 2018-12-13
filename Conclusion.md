@@ -59,9 +59,11 @@ Comparing with matrix factorization methods, neural networks with embeddings lay
 
 ## Future Works
 
-1. Due to our limited computational power on our personal computers, we could only build our models on a small subset of the data. To scale up for more samples and thus build a stronger model, we need to utilize cloud computing resources like AWS or Google Cloud Platform.
-2. Our methods are all collaborative filtering, which is commonly used in real world but have significant drawbacks like cold start problem. To deal with issues like this, we may build hybrid models to utilize advantages of other types of models like content-based model, which is based on the feature data of the tracks. The feature data included in the MPD and features available from other datasets is needed. Features include but are not limited to: artist, music genre, music length, artist name, etc.
-3. We hope that our work is the start of something big. We will continue on our path to seek more knowledge, discover more models and approaches to improve our automatic playlist recommender and lay the foundation for more amazing creations with our knowledge of data science.
+Due to our limited computational power on our personal computers, we could only build our models on a small subset of the data. To scale up for more samples and thus build a stronger model, we need to utilize cloud computing resources like AWS or Google Cloud Platform.
+
+Our methods are all collaborative filtering, which is commonly used in real world but have significant drawbacks like cold start problem. To deal with issues like this, we may build hybrid models to utilize advantages of other types of models like content-based model, which is based on the feature data of the tracks. The feature data included in the MPD and features available from other datasets is needed. Features include but are not limited to: artist, music genre, music length, artist name, etc.
+
+We hope that our work is the start of something big. We will continue on our path to seek more knowledge, discover more models and approaches to improve our automatic playlist recommender and lay the foundation for more amazing creations with our knowledge of data science.
 
 ## References
 
