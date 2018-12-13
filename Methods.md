@@ -19,40 +19,39 @@ Having taken a subset of 1000 playlists, we first built up a train-validation se
 
 We used two kinds of methods in evaluating the accuracy of the recommendations, which were R-precision and NDCG(Normalized discounted cumulative gain). These two methods are different in two ways, which are how they deal with the length and position of recommendations.
 
-1. **R-Precision**
+**1. R-Precision**
 
-   R-precision is the number of retrieved relevant tracks divided by the number of known relevant tracks (i.e., the number of withheld tracks):
-
-   (The ground truth set of tracks by G, and the ordered list of recommended tracks by R.). 
-
+R-precision is the number of retrieved relevant tracks divided by the number of known relevant tracks (i.e., the number of withheld tracks):
+(The ground truth set of tracks by G, and the ordered list of recommended tracks by R.). 
 
 
-
-   $$
-   R-precision = \frac{|G\cap R_{1:|G|}|}{|G|}
-   $$
-   In our case, this method only takes some first recommendations into account, with the length equals to that of the masked tracks. And it does not treat the position of the correct recommendations differently.
-
-2. **NDCG** (Normalized DCG (NDCG))
-
-   Discounted cumulative gain (DCG) measures the ranking quality of the recommended tracks, increasing when relevant tracks are placed higher in the list. Normalized DCG (NDCG) is determined by calculating the DCG and dividing it by the ideal DCG in which the recommended tracks are perfectly ranked:     
+$$
+R-precision = \frac{|G\cap R_{1:|G|}|}{|G|}
+$$
 
 
 
+In our case, this method only takes some first recommendations into account, with the length equals to that of the masked tracks. And it does not treat the position of the correct recommendations differently.
 
-   $$
-   DCG = rel_1 + \sum_{i=2}^{|R|}\frac{rel_i}{log_2(i+1)}
-   $$
+**2. NDCG(Normalized DCG (NDCG))** 
 
-   $$
-   IDCG=1+\sum^{G\cap R}_{i=2}\frac{1}{log_2(i+1)}
-   $$
+Discounted cumulative gain (DCG) measures the ranking quality of the recommended tracks, increasing when relevant tracks are placed higher in the list. Normalized DCG (NDCG) is determined by calculating the DCG and dividing it by the ideal DCG in which the recommended tracks are perfectly ranked:     
 
-   $$
-   NDCG=\frac{DCG}{IDCG}
-   $$
 
-   In our case, the ideal DCG should be calculated as when all the correct tracks are recommended at the first several places. This method takes the position into account, in practise, correct recommendations at some bottom places will be weighted pretty low. And as the number of recommendations considered increases, more recommendations will be considered, not like R-precision, which only considers a length that is equal to the known tracks.
+
+$$
+DCG = rel_1 + \sum_{i=2}^{|R|}\frac{rel_i}{log_2(i+1)}
+$$
+
+$$
+IDCG=1+\sum^{G\cap R}_{i=2}\frac{1}{log_2(i+1)}
+$$
+
+$$
+NDCG=\frac{DCG}{IDCG}
+$$
+
+In our case, the ideal DCG should be calculated as when all the correct tracks are recommended at the first several places. This method takes the position into account, in practise, correct recommendations at some bottom places will be weighted pretty low. And as the number of recommendations considered increases, more recommendations will be considered, not like R-precision, which only considers a length that is equal to the known tracks.
 
 ## Modeling Approach
 
