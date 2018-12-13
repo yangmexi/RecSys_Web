@@ -2,7 +2,7 @@
 title: Final Report - Automatic Playlist Recommender
 ---
 
-**🎧Group 45🎧: Lucy Liu🎹, Mengxi Yang👾, Rui Song🌦, Tong Zhao🎀**
+**Group 45 🎧: Lucy Liu🎹, Mengxi Yang👾, Rui Song🌦, Tong Zhao🎀**
 
 ## Overview
 
