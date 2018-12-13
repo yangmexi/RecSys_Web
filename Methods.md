@@ -17,9 +17,9 @@ Having taken a subset of 1000 playlists, we first built up a train-validation se
 
 ## Metrics
 
-1. **R-Precision**
+We used two kinds of methods in evaluating the accuracy of the recommendations, which were R-precision and NDCG(Normalized discounted cumulative gain). These two methods are different in two ways, which are how they deal with the length and position of recommendations.
 
-   We used two kinds of methods in evaluating the accuracy of the recommendations, which were R-precision and NDCG(Normalized discounted cumulative gain). These two methods are different in two ways, which are how they deal with the length and position of recommendations.
+1. **R-Precision**
 
    R-precision is the number of retrieved relevant tracks divided by the number of known relevant tracks (i.e., the number of withheld tracks):
 
@@ -31,10 +31,9 @@ Having taken a subset of 1000 playlists, we first built up a train-validation se
    $$
    R-precision = \frac{|G\cap R_{1:|G|}|}{|G|}
    $$
+   In our case, this method only takes some first recommendations into account, with the length equals to that of the masked tracks. And it does not treat the position of the correct recommendations differently.
 
 2. **NDCG** (Normalized DCG (NDCG))
-
-   In our case, this method only takes some first recommendations into account, with the length equals to that of the masked tracks. And it does not treat the position of the correct recommendations differently.
 
    Discounted cumulative gain (DCG) measures the ranking quality of the recommended tracks, increasing when relevant tracks are placed higher in the list. Normalized DCG (NDCG) is determined by calculating the DCG and dividing it by the ideal DCG in which the recommended tracks are perfectly ranked:     
 
