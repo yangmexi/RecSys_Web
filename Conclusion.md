@@ -17,7 +17,7 @@ nav_include: 3
 
 ![Model_comparision](notebooks/fig/Model_comparision.png)
 
-####Overall performance
+#### Overall performance
 
 When we evaluated all of our recommendation models by looking at R precision, the ALS model had the best performance. User-based collaborative filtering and KNN yielded similar level of performance followed by NN with slightly lower R precision score. The item-based collaborative filtering generated the worst R precision score which was almost the same as our baseline recommendation model. When we assessed our models by NDCG score, ALS, user-based, and KNN models had similar high performance in recommending new songs to users followed by NN with lower NDCG score. Item-based model still generated worst performance. As we evaluated our models' performance by number of  recommendations, we found that the performance were better for all models when we recommended more songs. However, the performance did eventually reach a bottleneck when we evaluated by R precision, but continued to increase when we evaluated by NDCG.
 
@@ -25,7 +25,7 @@ When we evaluated all of our recommendation models by looking at R precision, th
 
 The best performancing model - the ALS model yielded an R precision score of 0.0586, and NDCG score of 0.1550. The User-based and KNN models also performed relatively well, yielding R precision scores of 0.0501 and 0.0505, and NDCG scores of 0.1478 and 0.1479. The NN model had a relatively poor performance but still managed to outperform the baseline model. The item-based model yielded the worst R precision and NDCG scores, both worse than the baseline model. 
 
-####Time efficiency
+#### Time efficiency
 
 Simple recommender is non-personalized and thus we only compute the most popular tracks for one time. Memory-based approaches, both item-based and user-based, are slower and requires more memory, comparing to all model-based methods, ALS, k-NN and neural networks.
 
@@ -37,7 +37,7 @@ Simple recommender is non-personalized and thus we only compute the most popular
 
 
 
-####More on ALS
+#### More on ALS
 
 As can be seen in the figure above, as the sample size of the dataset used in building the model increases, the accuracy of the recommendation increases under both of the evaluation methods in general. 
 

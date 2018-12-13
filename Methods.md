@@ -23,7 +23,7 @@ Having taken a subset of 1000 playlists, we first built up a train-validation se
 
    R-precision is the number of retrieved relevant tracks divided by the number of known relevant tracks (i.e., the number of withheld tracks):
 
-   (The ground truth set of tracks by G, and the ordered list of recommended tracks by R.)
+   (The ground truth set of tracks by G, and the ordered list of recommended tracks by R.).    
    $$
    R-precision = \frac{|G\cap R_{1:|G|}|}{|G|}
    $$
@@ -32,7 +32,7 @@ Having taken a subset of 1000 playlists, we first built up a train-validation se
 
    In our case, this method only takes some first recommendations into account, with the length equals to that of the masked tracks. And it does not treat the position of the correct recommendations differently.
 
-   Discounted cumulative gain (DCG) measures the ranking quality of the recommended tracks, increasing when relevant tracks are placed higher in the list. Normalized DCG (NDCG) is determined by calculating the DCG and dividing it by the ideal DCG in which the recommended tracks are perfectly ranked:
+   Discounted cumulative gain (DCG) measures the ranking quality of the recommended tracks, increasing when relevant tracks are placed higher in the list. Normalized DCG (NDCG) is determined by calculating the DCG and dividing it by the ideal DCG in which the recommended tracks are perfectly ranked:       
    $$
    DCG = rel_1 + \sum_{i=2}^{|R|}\frac{rel_i}{log_2(i+1)}
    $$

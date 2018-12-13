@@ -2,6 +2,8 @@
 title: Final Report - Automatic Playlist Recommender
 ---
 
+Group 45: Lucy Liu, Mengxi Yang, Rui Song, Tong Zhao
+
 ## Overview
 
 As of date, according to data released by Apple’s app store and Google Play, Spotify is the most popular music application in the United States. Spotify’s success consists of many facets, and its well-performing music recommender system undoubtedly plays an integral part. In all, Music recommender systems (MRS) have recently exploded in popularity thanks to popular music streaming services like Spotify, Apple music, etc. By some accounts, almost half of all current music consumption is by the way of these services. The popularity of music recommender systems is intelligible. Through technological advances, the mainstream way of music consumption evolved from using individual devices CD players, walkmans, iPods as ‘music players’ to using apps on laptops and mobile phones. A main change associated with the change of mainstream devices is that, a user’s ‘playlist’ is no longer ‘locally stored’, but rather stored online and can be shared with other users online. Public playlists on Spotify can be ‘followed’ by other users, and updates on the playlist are immediately available to followers.  As a result, online playlists possess properties that allow them to be dynamic and timely, and would therefore attract more user usage and interactions.
