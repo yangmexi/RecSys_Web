@@ -1,5 +1,5 @@
 ---
-title: Conclusions
+title: Results & Conclusions
 notebook: Conclusion.ipynb
 nav_include: 3
 ---
