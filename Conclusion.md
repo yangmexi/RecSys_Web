@@ -69,6 +69,8 @@ We hope that our work is the start of something big. We will continue on our pat
 
 Benfred. (2018, November 26). Benfred/implicit. Retrieved from https://github.com/benfred/implicit/
 
+Bwhite. (2012). Bwhite/[rank_metrics.py](/Users/mengxiyang/Library/Application Support/typora-user-images/A9523793-C7DB-4631-ACB2-96EBB736921F/rank_metrics.py). Retrieved from <https://gist.github.com/bwhite/3726239>
+
 Collaborative Filtering with Python. (n.d.). Retrieved from http://www.salemmarafi.com/code/collaborative-filtering-with-python/
 
 GIS-T 2018 Proceedings – Transportation.org. (n.d.). Retrieved from <https://gis-t-dev.transportation.org/gis-t-2018-proceedings/>
@@ -79,6 +81,15 @@ Grover, P. (2017, December 28). Various Implementations of Collaborative Filteri
 
 Rosenthal, E. (n.d.). Services. Retrieved from https://www.ethanrosenthal.com/2015/11/02/intro-to-collaborative-filtering/
 
+Mrthlinh. (2018, Octobor 22). Mrthlinh/Spotify-Playlist-Recommender. Retrieved from
+
+<https://github.com/mrthlinh/Spotify-Playlist-Recommender>
+
 Sklearn.neighbors.NearestNeighbors¶. (n.d.). Retrieved from https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.NearestNeighbors.html
 
+Vaslnk. (2018, May 04). Vaslnk/Spotify-Song-Recommendation-ML. Retrieved from https://github.com/vaslnk/Spotify-Song-Recommendation-ML
+
+Victor. (2017, August 23). ALS Implicit Collaborative Filtering. Retrieved from <https://medium.com/radon-dev/als-implicit-collaborative-filtering-5ed653ba39fe>
+
 Zhou Y., Wilkinson D., Schreiber R., Pan R. (2008) Large-Scale Parallel Collaborative Filtering for the Netflix Prize. In: Fleischer R., Xu J. (eds) Algorithmic Aspects in Information and Management. AAIM 2008. Lecture Notes in Computer Science, vol 5034. Springer, Berlin, Heidelberg
+
